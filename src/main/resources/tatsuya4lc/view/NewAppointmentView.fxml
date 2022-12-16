@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="560.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tatsuya4lc.controller.NewAppointmentController">
+   <children>
+      <BorderPane prefHeight="560.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label fx:id="newAppntMainTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="14.0" prefHeight="47.0" prefWidth="357.0" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="14.0">
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font>
+                              </Label>
+                              <GridPane layoutX="59.0" layoutY="61.0" prefHeight="400.0" prefWidth="451.0" AnchorPane.topAnchor="79.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="126.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="10.0" prefWidth="270.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label fx:id="newAppntID" alignment="CENTER_RIGHT" contentDisplay="CENTER" maxHeight="40.0" maxWidth="170.0" minHeight="40.0" minWidth="170.0" prefHeight="40.0" prefWidth="170.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="newAppntTitle" alignment="CENTER_RIGHT" contentDisplay="CENTER" maxHeight="40.0" maxWidth="120.0" minHeight="40.0" minWidth="170.0" prefHeight="40.0" prefWidth="120.0" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="newAppntDescription" alignment="CENTER_RIGHT" contentDisplay="CENTER" maxHeight="40.0" maxWidth="120.0" minHeight="40.0" minWidth="170.0" prefHeight="40.0" prefWidth="120.0" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="newAppntLocation" alignment="CENTER_RIGHT" contentDisplay="CENTER" maxHeight="40.0" maxWidth="120.0" minHeight="40.0" minWidth="170.0" prefHeight="40.0" prefWidth="120.0" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="newAppntContact" alignment="CENTER_RIGHT" contentDisplay="CENTER" maxHeight="40.0" maxWidth="120.0" minHeight="40.0" minWidth="170.0" prefHeight="40.0" prefWidth="120.0" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="newAppntType" alignment="CENTER_RIGHT" contentDisplay="CENTER" maxHeight="40.0" maxWidth="120.0" minHeight="40.0" minWidth="170.0" prefHeight="40.0" prefWidth="120.0" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="textAppntID" alignment="CENTER" disable="true" editable="false" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="textAppntTitle" alignment="CENTER" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="textAppntDescription" alignment="CENTER" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label fx:id="newAppntStart" alignment="CENTER_RIGHT" contentDisplay="CENTER" maxHeight="40.0" maxWidth="120.0" minHeight="40.0" minWidth="170.0" prefHeight="40.0" prefWidth="120.0" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="newAppntEnd" alignment="CENTER_RIGHT" contentDisplay="CENTER" maxHeight="40.0" maxWidth="120.0" minHeight="40.0" minWidth="170.0" prefHeight="40.0" prefWidth="120.0" GridPane.rowIndex="7">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="newAppntCustomerID" alignment="CENTER_RIGHT" contentDisplay="CENTER" maxHeight="40.0" maxWidth="120.0" minHeight="40.0" minWidth="170.0" prefHeight="40.0" prefWidth="120.0" GridPane.rowIndex="8">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="newAppntUserID" alignment="CENTER_RIGHT" contentDisplay="CENTER" maxHeight="40.0" maxWidth="120.0" minHeight="40.0" minWidth="170.0" prefHeight="40.0" prefWidth="120.0" GridPane.rowIndex="9">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER_LEFT" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                       <children>
+                                          <DatePicker fx:id="appntStartDate" promptText="MM/DD/YYYY" showWeekNumbers="true" />
+                                          <ComboBox fx:id="appntStartTime" prefWidth="150.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                       <children>
+                                          <DatePicker fx:id="appntEndDate" promptText="MM/DD/YYYY" />
+                                          <ComboBox fx:id="appntEndTime" prefWidth="150.0" />
+                                       </children>
+                                    </HBox>
+                                    <TextField fx:id="textAppntType" alignment="CENTER" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <ComboBox fx:id="textUserID" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <ComboBox fx:id="textCusID" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <ComboBox fx:id="textContact" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <ComboBox fx:id="textLocation" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                 </children>
+                              </GridPane>
+                              <HBox spacing="30.0" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                                 <children>
+                                    <Button fx:id="newAppntSave" maxHeight="25.0" maxWidth="120.0" minHeight="25.0" minWidth="120.0" mnemonicParsing="false" onAction="#onAppntSave" prefHeight="25.0" prefWidth="120.0" />
+                                    <Button fx:id="newAppntCancel" maxHeight="25.0" maxWidth="60.0" minHeight="25.0" minWidth="60.0" mnemonicParsing="false" onAction="#onAppntCancel" prefHeight="25.0" prefWidth="60.0" />
+                                 </children>
+                              </HBox>
+                              <Label fx:id="zoneID" layoutX="426.0" layoutY="413.0" prefHeight="17.0" prefWidth="127.0" />
+                           </children>
+                        </AnchorPane>
+                     </center>
+                     <top>
+                        <Separator prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </top>
+                     <bottom>
+                        <Separator prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </bottom>
+                     <left>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" BorderPane.alignment="CENTER" />
+                     </left>
+                     <right>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" BorderPane.alignment="CENTER" />
+                     </right>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
